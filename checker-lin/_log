@@ -1,0 +1,120 @@
+==8508== Memcheck, a memory error detector
+==8508== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8508== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==8508== Command: ./_test/run_test 20
+==8508== Parent PID: 8507
+==8508== 
+==8508== Invalid write of size 4
+==8508==    at 0x4852A0B: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508==  Address 0x4a66048 is 0 bytes after a block of size 8 alloc'd
+==8508==    at 0x483F7B5: malloc (vg_replace_malloc.c:381)
+==8508==    by 0x48529FF: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508== 
+==8508== Invalid write of size 4
+==8508==    at 0x4852A15: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508==  Address 0x4a66058 is 16 bytes after a block of size 8 alloc'd
+==8508==    at 0x483F7B5: malloc (vg_replace_malloc.c:381)
+==8508==    by 0x48529FF: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508== 
+==8508== Invalid write of size 8
+==8508==    at 0x4852A20: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508==  Address 0x4a66050 is 8 bytes after a block of size 8 alloc'd
+==8508==    at 0x483F7B5: malloc (vg_replace_malloc.c:381)
+==8508==    by 0x48529FF: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508== 
+==8508== Invalid write of size 4
+==8508==    at 0x4852A28: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508==  Address 0x4a6605c is 20 bytes after a block of size 8 alloc'd
+==8508==    at 0x483F7B5: malloc (vg_replace_malloc.c:381)
+==8508==    by 0x48529FF: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508== 
+==8508== Invalid write of size 4
+==8508==    at 0x4852A33: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508==  Address 0x4a66060 is 16 bytes after a block of size 16 in arena "client"
+==8508== 
+==8508== Invalid write of size 8
+==8508==    at 0x4879998: sem_init@@GLIBC_2.2.5 (sem_init.c:51)
+==8508==    by 0x4852A53: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+==8508==  Address 0x4a66068 is 24 bytes after a block of size 16 in arena "client"
+==8508== 
+
+valgrind: m_mallocfree.c:303 (get_bszB_as_is): Assertion 'bszB_lo == bszB_hi' failed.
+valgrind: Heap block lo/hi size mismatch: lo = 80, hi = 0.
+This is probably caused by your program erroneously writing past the
+end of a heap block and corrupting heap metadata.  If you fix any
+invalid writes reported by Memcheck, this assertion failure will
+probably go away.  Please try that before reporting this as a bug.
+
+
+host stacktrace:
+==8508==    at 0x580422AA: show_sched_status_wrk (m_libcassert.c:406)
+==8508==    by 0x580423C7: report_and_quit (m_libcassert.c:477)
+==8508==    by 0x58042557: vgPlain_assert_fail (m_libcassert.c:543)
+==8508==    by 0x5804C02F: get_bszB_as_is (m_mallocfree.c:303)
+==8508==    by 0x5804C02F: is_inuse_block (m_mallocfree.c:331)
+==8508==    by 0x5804C02F: vgPlain_describe_arena_addr (m_mallocfree.c:1604)
+==8508==    by 0x5803ABEA: vgPlain_describe_addr (m_addrinfo.c:185)
+==8508==    by 0x580392A7: vgMemCheck_update_Error_extra (mc_errors.c:1185)
+==8508==    by 0x5803DB35: vgPlain_maybe_record_error (m_errormgr.c:822)
+==8508==    by 0x58038588: vgMemCheck_record_address_error (mc_errors.c:765)
+==8508==    by 0x1003F59A78: ???
+==8508==    by 0x1002DADF2F: ???
+==8508==    by 0x581F9D83: ??? (in /usr/libexec/valgrind/memcheck-amd64-linux)
+==8508==    by 0x1002DADF17: ???
+==8508==    by 0x1002DADF2F: ???
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable (lwpid 8508)
+==8508==    at 0x48799A5: sem_init@@GLIBC_2.2.5 (sem_init.c:59)
+==8508==    by 0x4852A53: init_thread (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x48522B6: so_fork (in /home/kali/Documents/SO/l3-so-assignments/assignments/4-scheduler/checker-lin/libscheduler.so)
+==8508==    by 0x10B3D5: test_sched_21 (test_io.c:225)
+==8508==    by 0x1094AC: main (run_test.c:120)
+client stack range: [0x1FFEFFE000 0x1FFF000FFF] client SP: 0x1FFEFFFD38
+valgrind stack range: [0x1002CAE000 0x1002DADFFF] top usage: 19080 of 1048576
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+
